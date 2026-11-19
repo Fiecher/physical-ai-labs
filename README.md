@@ -25,7 +25,7 @@ _Белебезьев Степан, 9 группа_
 ## Графики обучения
 
 ### Сравнение всех экспериментов
-![Сравнение всех экспериментов](plots/all_experiments_mean_reward.png)
+![Сравнение всех экспериментов](all_experiments_mean_reward.png)
 
 ### Отдельные запуски
 * **Baseline**: ![baseline](baseline_mean_reward.png)
