@@ -28,11 +28,11 @@ _Белебезьев Степан, 9 группа_
 ![Сравнение всех экспериментов](plots/all_experiments_mean_reward.png)
 
 ### Отдельные запуски
-* **Baseline**: ![baseline](plots/baseline_mean_reward.png)
-* **Scale Iters 2000**: ![scale_iters_2000](plots/scale_iters_2000_mean_reward.png)
-* **Box Target Strong**: ![box_target_strong](plots/box_target_strong_mean_reward.png)
-* **Qpos Strong**: ![qpos_strong](plots/qpos_strong_mean_reward.png)
-* **Custom Exp (gripper_box = 12.0)**: ![custom_exp](plots/custom_exp_mean_reward.png)
+* **Baseline**: ![baseline](baseline_mean_reward.png)
+* **Scale Iters 2000**: ![scale_iters_2000](scale_iters_2000_mean_reward.png)
+* **Box Target Strong**: ![box_target_strong](box_target_strong_mean_reward.png)
+* **Qpos Strong**: ![qpos_strong](qpos_strong_mean_reward.png)
+* **Custom Exp (gripper_box = 12.0)**: ![custom_exp](custom_exp_mean_reward.png)
 
 ## Самостоятельный эксперимент
 
@@ -48,8 +48,8 @@ _Белебезьев Степан, 9 группа_
 
 | Эксперимент | Изменение в коде                                                             | mean_reward                        | SR (k/10) | Время             | Поведение                                                                 |
 | ----------- | ---------------------------------------------------------------------------- | ---------------------------------- | --------- | ----------------- | ------------------------------------------------------------------------- |
-| baseline    | `EXP_NAME = "baseline"`                                                      | Плато на высоком уровне, `1341.86` | —         | 1778 с (29.6 мин) | Дотягивается,<br>поднимает,<br>успешно несет к цели                       |
-| custom_exp  | `EXP_NAME = "custom_exp"`, `env_cfg.reward_config.scales.gripper_box = 12.0` | Быстрый выход на плато, `1760.01`  | —         | 1639 с (27.3 мин) | Очень быстро наводит схват на куб,<br>уверенно захватывает и несет к цели |
+| baseline    | `EXP_NAME = "baseline"`                                                      | Плато на высоком уровне, `1341.86` | 9         | 1778 с (29.6 мин) | Дотягивается,<br>поднимает,<br>успешно несет к цели                       |
+| custom_exp  | `EXP_NAME = "custom_exp"`, `env_cfg.reward_config.scales.gripper_box = 12.0` | Быстрый выход на плато, `1760.01`  | 0         | 1639 с (27.3 мин) | Очень быстро наводит схват на куб,<br>уверенно захватывает и несет к цели |
 
 ### Подтверждение по `mean_reward`
 
